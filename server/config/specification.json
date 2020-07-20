@@ -1,0 +1,43 @@
+{
+  "name": "Простой веб-сервис",
+  "title": "Ввести параметры в терминале",
+  "description": "С помощью этого веб-сервиса Вы можете одну цифру и один из тесксов выбрать как параметры и вызвать комманду на сервере",
+  "parameters": {
+    "input": [
+      {
+        "type": "number",
+        "name": "input_num",
+        "title": "Числовое значение, передаваемое на вход программе"
+      },
+      {
+        "type": "select",
+        "name": "input_text",
+        "title": "Выбирите из списка и передайте на вход программе",
+        "items": [
+          {
+            "value": "Hello World!",
+            "title": "Привет МИР"
+          },
+          {
+            "value": "My first command in server",
+            "title": "Моя Первая комманда на Сервере"
+          }
+        ]
+      }
+    ],
+    "output": [
+      {
+        "type": "string",
+        "name": "result",
+        "title": "Результат выполнения программы"
+      }
+    ]
+  },
+  "commands": {
+    "start": "./start.sh ${input_num} ${input_text}"
+  }
+}
+
+
+
+

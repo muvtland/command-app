@@ -1,0 +1,6 @@
+export const SPECIFICATION = 'SPECIFICATION'
+export const ADDRESULT = 'ADDRESULT'
+export const LOADINGSTART = 'LOADINGSTART'
+export const LOADINGEND = 'LOADINGEND'
+export const REMOVERESULT = 'REMOVERESULT'
+export const GETQUEUE = 'GETQUEUE'
